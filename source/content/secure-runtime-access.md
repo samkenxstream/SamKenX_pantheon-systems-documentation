@@ -18,6 +18,13 @@ In addition to defense in depth, this feature can be used to enforce role-based 
 Secure Runtime Access is available to [contract](https://pantheon.io/plans/pricing) customers with an [Organization](/organizations) dashboard. [Contact Sales](https://pantheon.io/contact-us) to request that SRA be enabled for your site.
 
 ### Considersations
+Users with Secure Runtime Access need to have an active Dashboard session in order to access DB services.
+* You canot access mysql, or sftp unless you have an active dashboard session. Terminus may be blocked as well, but i'm not 100% on that.
+* Dashboard sessions only last 24 hours (consistent with user dashboard doc
+* You can start a new dashboard session by logging into `dashboard.pantheon.io` or running `terminus auth:login`.
+
+We determine which user should have access to mysql, SFTP through the SSH key being used and which user account has the public key
+CI/CD integrations on sites that have SRA enabled and that rely on any of these services need to ensure they're creating a dashboard session before trying to their thing
 
 ## How to Access Runtime Services When SRA Is Enabled
 
