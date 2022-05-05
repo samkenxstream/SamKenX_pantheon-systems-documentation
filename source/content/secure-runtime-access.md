@@ -17,6 +17,8 @@ In addition to defense in depth, this feature can be used to enforce role-based 
 
 Secure Runtime Access is available to [contract](https://pantheon.io/plans/pricing) customers with an [Organization](/organizations) dashboard. [Contact Sales](https://pantheon.io/contact-us) to request that SRA be enabled for your site.
 
+### Considersations
+
 ## How to Access Runtime Services When SRA Is Enabled
 
 Follow the [Secure Tunnels](/ssh-tunnels) doc to create the tunnel and access resources after SRA is enabled.
