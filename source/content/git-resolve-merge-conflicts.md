@@ -3,7 +3,7 @@ title: Resolve Git Merge Conflicts
 description: Learn how to resolve conflicts in your site code base. 
 categories: [troubleshoot]
 tags: [git, local, webops]
-contributors: [alexfornuto]
+contributors: [alexfornuto, joa-pan]
 reviewed: "2022-05-26"
 ---
 
@@ -19,7 +19,7 @@ Conflicts can occur when modified file(s) within your site's codebase do not ali
 
 If you receive the error that you have conflicts while updating core, the fastest resolution is often to use the `-Xtheirs` flag. This will attempt to automatically resolve the conflicts with a preference for upstream changes.
 
-This is safe to run if you don't have your own changes in any of the conflicting files, for example problems with `.gitignore`.
+This is safe to run if you don't have your own changes in any of the conflicting files (for example problems with `.gitignore`).
 
 <TabList>
 
@@ -89,7 +89,7 @@ CONFLICT (delete/modify): scripts/run-tests.sh deleted in HEAD and modified in 7
 
   <Alert title="Note" type="info">
 
-  When looking for a commit ID, you can find the last instance where the missing file was in the repository.
+  You can find the last instance where the missing file was in the repository when looking at the commit ID.
 
   </Alert>
 
@@ -132,7 +132,7 @@ To resolve:
 
   ![An example of Visual Studio Code highlighting a merge conflict](../images/vscode-merge-conflict.png)
 
-1. Edit the conflict by either choose one of the two versions of the conflicting line(s), or editing a version containing both updates. Be sure to remove all the delineators notes above from the file.
+1. Edit the conflict by choosing one of the two versions of the conflicting line(s), or by editing a version containing both updates. Ensure you remove all the delineator notes from the file.
 
 1. Once you've saved your changes, commit and push:
 
@@ -161,4 +161,4 @@ If a merge conflict is preventing you from merging a Multidev environment, follo
   git pull origin multidev
   ```
 
-1. Git will tell you which files are in conflict. [Resolve the conflicts](#manually-resolve-conflicts) using the steps above.
+1. Git notifies you of which files are in conflict. [Resolve the conflicts](#manually-resolve-conflicts) using the steps above.
