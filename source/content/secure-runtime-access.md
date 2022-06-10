@@ -20,9 +20,11 @@ Secure Runtime Access is available to [contract](https://pantheon.io/plans/prici
 ### Considersations
 Users with Secure Runtime Access need to have an active Dashboard session to access database services. The following considerations apply:
 
-* Users cannot access MySQL or SFTP unless there is an active dashboard session. 
+* Users cannot access MySQL or SFTP unless there is an active dashboard session. We determine which user should have access to mysql, sftp through the ssh key being used and which user account has the public key
+* CI/CD integrations on sites that have SRA enabled and that rely on any of these services need to ensure they're creating a dashboard session.
 * Dashboard sessions only last 24 hours
 * You can start a new dashboard session by logging into `dashboard.pantheon.io` or running `terminus auth:login`.
+
 
 <!----
 We determine which user should have access to MySQL, SFTP through the SSH key authentication and which user account has the public key
