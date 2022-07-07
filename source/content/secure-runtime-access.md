@@ -18,18 +18,12 @@ In addition to defense in depth, this feature can be used to enforce role-based 
 Secure Runtime Access is available to [contract](https://pantheon.io/plans/pricing) customers with an [Organization](/organizations) dashboard. [Contact Sales](https://pantheon.io/contact-us) to request that SRA be enabled for your site.
 
 ### Considersations
-Users with Secure Runtime Access need to have an active Dashboard session to access database services. The following considerations apply:
 
-* Users cannot access MySQL or SFTP unless there is an active dashboard session. We determine which user should have access to mysql, sftp through the ssh key being used and which user account has the public key
-* CI/CD integrations on sites that have SRA enabled and that rely on any of these services need to ensure they're creating a dashboard session.
-* Dashboard sessions only last 24 hours
-* You can start a new dashboard session by logging into `dashboard.pantheon.io` or running `terminus auth:login`.
+Users with Secure Runtime Access must have an active dashboard session to access database services. The following considerations apply:
 
-
-<!----
-We determine which user should have access to MySQL, SFTP through the SSH key authentication and which user account has the public key
-CI/CD integrations on sites that have SRA enabled and that rely on any of these services need to ensure they're creating a dashboard session before trying to their thing
-----!>
+* Users cannot access MySQL or SFTP unless there is an active dashboard session. Pantheon determines which user should have access to MySQL and SFTP through the SSH key and which user account has the public key.
+* CI/CD integrations on sites that have SRA enabled and that rely on any of these services must ensure the integrations create a dashboard session.
+* Dashboard sessions last for a limited time and typically expire after 24 hours. You can start a new dashboard session by logging into `dashboard.pantheon.io` or running `terminus auth:login`.
 
 ## How to Access Runtime Services When SRA Is Enabled
 
