@@ -13,7 +13,7 @@ anchorid: faq
 
 This section provides answers to frequently asked questions.
 
-## When are Site Portfolio Reports Sent?
+## When are Site Portfolio Reports sent?
 
 You’ll receive Site Portfolio Reports through:
 
@@ -23,7 +23,7 @@ You’ll receive Site Portfolio Reports through:
 
 - Requests for invoicing submitted to Pantheon
 
-## How Do I Know Which Changes Relate to the Invoice?
+## How do I know which changes relate to the invoice?
 
 The Site Portfolio Report shows changes that appear in the invoice as charges for any site plan upgrades due to site traffic or new site additions.
 
@@ -43,19 +43,19 @@ Yes. You can submit a request to Pantheon asking for your invoice and the supple
 
 The total amount owed can be viewed on the invoice linked at the top of the Site Portfolio Report. The invoice only provides the overall total, and does not show how much is owed per site.
 
-## How Can I Access the Site Portfolio Report?
+## How can I access the Site Portfolio Report?
 
 Your Site Portfolio Report will be emailed to the Site Owner of the account. Click the link provided in the email to view the report.
 
-## Who Has Access to the Site Portfolio Report?
+## Who has access to the Site Portfolio Report?
 
 The Site Portfolio Report is emailed to the Site Owner of the account. No other users will receive the email. However, the Site Owner can share the link provided in the email with other users.
 
-## Can I Share the Site Portfolio Report?
+## Can I share the Site Portfolio Report?
 
 Yes. The Site Owner can share the link provided in the email with other users.
 
-## Can I Change Who Receives the Site Portfolio Report?
+## Can I change who receives the Site Portfolio Report?
 
 Yes. The Site Portfolio Report is emailed to the Site Owner on the account.  The current Site Owner must [transfer ownership directly](/site-billing#transfer-ownership-and-billing-for-this-site) if another teammate needs to assume site and billing ownership.
 
@@ -73,7 +73,7 @@ The Site Portfolio Report may not be generated or no data will be displayed on t
 
 - The invoice is not a positive invoice (i.e. it has a negative balance rather than a charge to the customer).
 
-- You are special-terms customer
+- You are a special-terms customer
 
 ## Will invoices be accessible all the time after they are generated or do they expire or archive after certain period of time?
 
@@ -87,11 +87,11 @@ No. Credit memo related changes are not reflected on the Site Portfolio Report.
 
 Not determined means that the site owner was not specified in the workspace.
 
-## What Should I Do if the Link to the Site Portfolio Report is Broken?
+## What should I do if the link to the Site Portfolio Report is broken?
 
 Contact your Pantheon account manager or [submit a support ticket](/guides/support/support-ticket/#organization-dashboard-support-tab) if the link to your Site Portfolio Report is broken.
 
-## Who Do I Contact for Support?
+## Who do I contact for support?
 
 Contact your Pantheon account manager or [submit a support ticket](/guides/support/support-ticket/#organization-dashboard-support-tab) if the link to your Site Portfolio Report is broken.
 
